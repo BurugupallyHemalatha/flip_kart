@@ -13,6 +13,6 @@ FROM nginx:alpine
 
 COPY --from=build /app/dist/[your-angular-project] /usr/share/nginx/html
 
-EXPOSE 80
+EXPOSE 8081
 
 CMD ["nginx", "-g", "daemon off;"]
